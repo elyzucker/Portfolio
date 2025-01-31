@@ -33,7 +33,7 @@ export function CustomCursor() {
         target.classList.contains('group') ||
         target.closest('.group');
       
-      setIsHovered(isClickable);
+      setIsHovered(Boolean(isClickable));
     };
 
     window.addEventListener('mousemove', moveCursor, { passive: true });
